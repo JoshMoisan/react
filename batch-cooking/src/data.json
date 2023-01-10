@@ -1,0 +1,76 @@
+{
+  "team": [
+    {
+      "name": "Mountain Goat",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://i0.wp.com/assets.preprod.foodnetwork.ca/wp-content/uploads/2022/01/FNC_OGImage_Taiwanese-Beef-Noodle-Soup.jpg"
+    },
+    {
+      "name": "Maple Street Neighboor",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://cdn.britannica.com/98/235798-050-3C3BA15D/Hamburger-and-french-fries-paper-box.jpg"
+    },
+    {
+      "name": "Lincoln Family",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://cdn.britannica.com/98/235798-050-3C3BA15D/Hamburger-and-french-fries-paper-box.jpg"
+    },
+    {
+      "name": "The foodies",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://static01.nyt.com/images/2023/01/11/multimedia/05Appe-Pasta-promo-1-5d26/05Appe-Pasta-promo-1-5d26-threeByTwoMediumAt2X.jpg"
+    },
+    {
+      "name": "University of Montreal",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/9/1/0/FNK_Whole-Wheat-Pizza-with-Arugula-Pesto_s4x3.jpg.rend.hgtvcom.406.406.suffix/1409755179984.jpeg"
+    },
+    {
+      "name": "Vegans crew",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-lRHZVQdchHOYdrukagBVmNQLPQhCOiUag&usqp=CAU"
+    },
+    {
+      "name": "Little Haiti",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://static01.nyt.com/images/2022/04/18/dining/hm-curry-udon-copy/merlin_205206765_ded4d3d3-d548-4d88-9abb-ce79e1ceffb4-videoLarge.jpg"
+    },
+    {
+      "name": "St-John's Church",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/10/14/0/FNK_SOUTHERN_STYLE_MAC_N_CHEESE_H_f_s4x3.jpg.rend.hgtvcom.406.203.suffix/1602697013202.jpeg"
+    },
+    {
+      "name": "Moms from the block",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://img.sndimg.com/food/image/upload/v1/img/recipes/89/20/4/uxMwt1VGQ5m2ePyzwHWy_salsa-chicken-black-beans-2312.jpg"
+    },
+    {
+      "name": "Meetups!",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=768,574"
+    },
+    {
+      "name": "Hungry Student Pact",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Corndogs-7832ef6.jpg?quality=90&resize=556,505"
+    },
+    {
+      "name": "Best cooks",
+      "users": ["Jason", "Fred", "Chris", "Emilie"],
+      "meals": ["Spaghetti", "Macaroni", "Pogo", "Lasagna"],
+      "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxpXQeskdUu9xfx9mUolZ3JS6LYFD5Fbidw&usqp=CAU"
+    }
+  ]
+}
