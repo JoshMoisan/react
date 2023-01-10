@@ -6,7 +6,7 @@ import './Styling/App.scss';
 
 function App() {
   const[groups, setGroups] = useState(data.team)
-  console.log(groups)
+  // console.log(groups)
 
 
   return (
