@@ -1,17 +1,22 @@
-.navbar-lewagon {
+$red: #AF5B5B;
+$orange: #FEAC48;
+$black: #222222;
+$white: #F6F4F3;
+
+.navbar {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  background-color: $white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10vh;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.option {
+
+  width: 30vw;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.avatar {
-  width: 40px;
-  border-radius: 50%;
+.options li {
+  display: inline;
 }
