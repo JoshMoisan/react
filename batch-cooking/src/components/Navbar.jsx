@@ -1,11 +1,12 @@
 import React from "react";
 
+
 const Navbar = () => {
 
   return(
     <div className="navbar">
       <div className="logo">
-        <h1>Yummy</h1>
+        <h1>YUMMY</h1>
       </div>
       <div className="options">
         <ul>
@@ -37,7 +38,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-  </div>
+    </div>
   )
 }
 

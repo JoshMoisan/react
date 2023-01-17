@@ -1,0 +1,27 @@
+$red: #AF5B5B;
+$orange: #FEAC48;
+$black: #222222;
+$white: #F6F4F3;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+  border-top: 1px solid $white ;
+}
+
+.footer li {
+  display: inline;
+  padding: 10px;
+}
+
+.footer li:hover {
+  border-bottom: $white;
+  font-weight: bolder;
+}
+
+.footer h3 {
+  color: $white;
+  font-size: 36px;
+}

@@ -19,13 +19,13 @@ return (
         </div>
         {openedId === group.name && <div className='little-avatar' id="participant" style={{display:display}}>
               <a href={`/${group.name}`}>
-                <p id='join-button'>+ Join</p>
+                <p id='join-button'>JOIN</p>
               </a>
-              <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" alt="avatar2" />
-              <img src="https://cdn-icons-png.flaticon.com/512/147/147133.png" alt="avatar3" />
+              <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHVtYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="avatar2" />
+              <img src="https://images.unsplash.com/photo-1596215143922-eedeaba0d91c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="avatar3" />
           </div> }
       </div>
-      <h3>{group.name}</h3>
+      <h4>{group.name}</h4>
     </div>
   )
 }

@@ -9,8 +9,7 @@ import MyProfile from "./pages/MyProfile";
 import Oops from "./pages/Oops";
 
 import Navbar from "./components/Navbar.jsx";
-
-
+import Footer from "./components/Footer.jsx";
 
 
 function App() {
@@ -44,6 +43,7 @@ function App() {
             </div>
           </Route>
         </Switch>
+        <footer><Footer /></footer>
       </div>
     </Router>
   );
