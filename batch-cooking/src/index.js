@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './Styling/index.scss';
-import './Styling/Navbar.scss';
+
+import './styling/index.scss';
+import './styling/Navbar.scss';
+import './styling/CookingGroup.scss';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

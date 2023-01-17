@@ -1,0 +1,38 @@
+$red: #AF5B5B;
+$orange: #FEAC48;
+$black: #222222;
+$white: #F6F4F3;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  // background-color: $black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 7vh;
+  align-items: center;
+}
+
+.navbar h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.options li {
+  display: inline;
+}
+
+.options a {
+  padding: 2vw;
+}
+
+.options li:hover {
+  border-bottom: $white;
+  font-weight: bolder;
+}
+
+.logo {
+  font-size: 64px;
+  font-weight: bolder;
+}

@@ -6,6 +6,7 @@ $white: #F6F4F3;
 
 a {
   text-decoration: none;
+  color: $white;
 }
 
 ul, ol {
@@ -57,4 +58,28 @@ ul, ol {
 
 #participant img {
   height: 50px;
+  padding-bottom: 10px;
+}
+
+.little-avatar {
+  animation: fadeIn 500ms;
+  position: absolute;
+  z-index: 100;
+  flex-wrap: wrap;
+  flex-direction: column;
+  top: 5%;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#join-button {
+  background-color: $black;
+  border-radius: 50%;
+  text-align: center;
+  // height: 50px;
+  padding-top: 25%;
+  padding-bottom: 25%;
 }
