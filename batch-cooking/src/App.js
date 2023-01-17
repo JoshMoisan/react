@@ -32,7 +32,7 @@ function App() {
             <Oops />
           </Route>
 
-          <Route path='/:group'>
+          <Route path='/:groupName'>
             <GroupInfo />
           </Route>
 

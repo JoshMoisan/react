@@ -28,8 +28,15 @@ ul, ol {
   -webkit-mask-position-y: -20px;
   -webkit-mask-repeat: no-repeat;
   object-fit: cover;
+  transition: all 500ms ease-in-out;
 
 }
+
+.thumbnail img:hover {
+  scale: 1.2;
+  opacity: 0.5;
+}
+
 
 .box {
   display: flex;

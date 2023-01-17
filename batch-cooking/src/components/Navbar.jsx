@@ -13,7 +13,6 @@ const Navbar = () => {
             <a
               href="/"
               className="nav-link"
-              activeClassName="active-nav-link"
               exact="/"
             >
               HOME
@@ -23,7 +22,6 @@ const Navbar = () => {
           <a
               href="/myprofile"
               className="nav-link"
-              activeClassName="active-nav-link"
             >
               PROFILE
             </a>
@@ -32,7 +30,6 @@ const Navbar = () => {
           <a
               href="/oops"
               className="nav-link"
-              activeClassName="active-nav-link"
               exact="/"
             >
               MORE

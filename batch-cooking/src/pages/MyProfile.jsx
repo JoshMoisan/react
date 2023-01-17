@@ -1,7 +1,8 @@
 import React from "react";
 
 
-const MyProfile = (id) => {
+
+const MyProfile = () => {
 
 
   return (
