@@ -6,7 +6,7 @@ import './styling/index.scss';
 import './styling/Navbar.scss';
 import './styling/Footer.scss';
 import './styling/CookingGroup.scss';
-import './styling/CookingInfo.scss';
+import './styling/GroupInfo.scss';
 
 
 import App from './App';
