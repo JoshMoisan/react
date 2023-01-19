@@ -10,7 +10,7 @@ const Card = ({targetGroup, index}) => {
         <h4 id="weekday">{days[index]}</h4>
         <a href=""><img src="#" alt="" className="arch" /></a>
         <h3>{targetGroup.meals[index]}</h3>
-        <h4>by {targetGroup.users[index]}</h4>
+        <h4>by {targetGroup.users[index] ? targetGroup.users[index]: "You"}</h4>
       </li>
   )
 }

@@ -3,6 +3,15 @@ $orange: #FEAC48;
 $black: #222222;
 $white: #F6F4F3;
 
+
+.upper-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0;
+  margin-bottom: 10vh;
+
+}
 .text h1{
   font-size: 64px;
   text-align: right;
@@ -12,15 +21,13 @@ $white: #F6F4F3;
   animation: fade-in 1s ease-in-out both;
 }
 
-.text h1:first-child {
+.text h1{
   margin-bottom: 0;
+  margin-top: 0;
   right: 15%;
 }
 
-.text h1:nth-child(2) {
-  margin-top: 0;
-  margin-bottom: 10vh;
-}
+
 
 .date {
   color: $white;
@@ -35,9 +42,8 @@ $white: #F6F4F3;
   align-items: center;
   -webkit-animation: fade-in 5s ease-in-out both;
   animation: fade-in 3s ease-in-out both;
+  margin-bottom: 10vh;
 }
-
-
 
 .week-meal {
   flex-grow: 2;
@@ -64,7 +70,6 @@ $white: #F6F4F3;
   }
 }
 
-
 #weekday {
   text-align: center;
   font-weight: 600;
@@ -76,6 +81,34 @@ $white: #F6F4F3;
   height: 200px;
   border: 2px solid black;
 }
+
+
+.button-option a, #quit {
+  display: block;
+  color: $red;
+  background-color:  $white;
+  border: 1px solid $white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  -webkit-animation: fade-in 5s ease-in-out both;
+  animation: fade-in 5s ease-in-out both;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 350ms ease-in-out;
+  cursor: pointer;
+}
+
+.button-option a:hover, #quit:hover {
+  border: 1px solid $white;
+  background: $red;
+  color: $white;
+}
+
+.button-option li {
+  margin-top: 20px;
+}
+
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;

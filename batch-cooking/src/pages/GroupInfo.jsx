@@ -21,13 +21,27 @@ const GroupInfo = () => {
       targetGroup = element
     }});
 
-
+    const confirmQuit = () => {
+      const ask = window.confirm(`Are you sure you want to quit ${targetGroup.name}`);
+        if (ask) {
+        window.location.href = "/oops";
+      }
+    }
 
   return (
     <div>
-      <div className="text">
-        <h1>This week for</h1>
-        <h1>{targetGroup.name}...</h1>
+      <div className="upper-container">
+        <div className="button-option">
+          <ol>
+            <li><a href="/oops">Add my meal</a></li>
+            <li><a href="/oops">Message the group form</a></li>
+            <li onClick={confirmQuit} id="quit">Quit this group</li>
+          </ol>
+        </div>
+        <div className="text">
+          <h1>This week for</h1>
+          <h1>{targetGroup.name}...</h1>
+        </div>
       </div>
 
       <div className="container">

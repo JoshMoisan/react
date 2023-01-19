@@ -1,0 +1,37 @@
+$red: #AF5B5B;
+$orange: #FEAC48;
+$black: #222222;
+$white: #F6F4F3;
+
+
+.container-oops {
+  height: 50vh;
+  h1, h2 {
+    color: $black;
+    text-align: center;
+  }
+  h1 {
+    font-size: 48px;
+  }
+}
+
+#quit-unique {
+  display: block;
+  color: $red;
+  background-color: $white;
+  border: 1px solid $white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 350ms ease-in-out;
+  cursor: pointer;
+  margin: 10vh auto;
+}
+
+#quit-unique:hover {
+  border: 1px solid $white;
+  background: $red;
+  color: $white;
+}

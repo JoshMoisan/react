@@ -7,6 +7,7 @@ import './styling/Navbar.scss';
 import './styling/Footer.scss';
 import './styling/CookingGroup.scss';
 import './styling/GroupInfo.scss';
+import './styling/Oops.scss';
 
 
 import App from './App';
