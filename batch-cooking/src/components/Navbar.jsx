@@ -3,6 +3,14 @@ import React from "react";
 
 const Navbar = () => {
 
+  const dropdown = () => {
+    const dropdownMenu = document.getElementsByClassName("hidden")
+    console.log(dropdownMenu)
+    dropdownMenu.classList.remove("hidden")
+    dropdownMenu.classList.add("show-menu")
+    console.log("Click")
+  }
+
   return(
     <div className="navbar">
       <div className="logo">
@@ -28,15 +36,15 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-          <a
-              href="/oops"
+          <p
               className="nav-link"
-              exact="/"
+              onClick={dropdown}
             >
-              MORE
-            </a>
+              MORE <strong>+</strong>
+            </p>
           </li>
         </ul>
+        <p className="hidden">Hello</p>
       </div>
     </div>
   )
