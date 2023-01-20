@@ -4,11 +4,18 @@ import React from "react";
 const Navbar = () => {
 
   const dropdown = () => {
-    const dropdownMenu = document.getElementsByClassName("hidden")
-    console.log(dropdownMenu)
-    dropdownMenu.classList.remove("hidden")
-    dropdownMenu.classList.add("show-menu")
-    console.log("Click")
+    const dropdownMenu = document.querySelectorAll(".hidden")
+    dropdownMenu.forEach(element => {
+      element.classList.toggle("show-menu")
+    });
+
+    const more = document.getElementById("more")
+    if (more.innerHTML === "MORE") {
+      more.innerHTML = "MORE +"
+    } else {
+      more.innerHTML = "MORE"
+    }
+
   }
 
   return(
@@ -21,7 +28,6 @@ const Navbar = () => {
           <li>
             <a
               href="/"
-              className="nav-link"
               exact="/"
             >
               HOME
@@ -30,21 +36,24 @@ const Navbar = () => {
           <li>
           <a
               href="/myprofile"
-              className="nav-link"
             >
               PROFILE
             </a>
           </li>
           <li>
-          <p
-              className="nav-link"
+          <p  id="more"
               onClick={dropdown}
             >
               MORE <strong>+</strong>
             </p>
           </li>
         </ul>
-        <p className="hidden">Hello</p>
+        <div className="dropdown-menu">
+          <a href="/oops" className="hidden">Create a group</a>
+          <a href="/oops" className="hidden">My messages</a>
+          <a href="/oops" className="hidden">Logout</a>
+        </div>
+
       </div>
     </div>
   )

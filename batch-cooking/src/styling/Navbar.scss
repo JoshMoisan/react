@@ -19,12 +19,20 @@ $white: #F6F4F3;
   font-weight: bolder;
 }
 
-.options li {
-  display: inline;
+.options ul {
+  padding: 0;
 }
 
-.options a {
-  padding: 2vw;
+.options li {
+  display: inline-block;
+  p {
+    cursor: pointer;
+  }
+}
+
+.options a, p {
+  padding: 0 2vw;
+  margin: 0;
 }
 
 .options li:hover {
@@ -42,5 +50,33 @@ $white: #F6F4F3;
 }
 
 .show-menu {
-  display: block;
+  // display: inline-block !important;
+  display: block !important;
+  padding: 10px !important;
+  margin: 0;
+  text-align: right;
+  z-index: 10;
+  animation: fadeIn 500ms;
+  right: 5%;
+}
+
+.dropdown-menu a {
+  color: $red;
+  font-weight: bold ;
+}
+
+#dropdown:hover {
+  font-weight: bolder;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: $white;
+  border-radius: 5%;
+  right: 5%;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
