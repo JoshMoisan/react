@@ -44,7 +44,6 @@ ul, ol {
   display: flex;
   width: 200px;
   margin: 3% 1.5%;
-  // border: 1px solid black;
   flex-direction: column;
   justify-content: space-evenly;
   scale: 1.5;
@@ -60,45 +59,44 @@ ul, ol {
   font-weight: 300;
 }
 
-.open-avatar {
-  display: flex !important;
-  position: absolute;
-  flex-direction: column;
-  z-index: 10;
-}
-
 #participant img {
   height: 50px;
-  padding-bottom: 10px;
+  width: 50px;
   border-radius: 50%;
   -webkit-filter: grayscale(100%);
   object-fit: cover;
   cursor: auto;
-
+  margin-bottom: 10px;
 }
 
 .little-avatar {
+  width: 25%;
   animation: fadeIn 500ms;
   position: absolute;
   z-index: 100;
   flex-wrap: wrap;
   flex-direction: column;
   top: 5%;
+}
+
+#join-button {
+  width: 56px;
+  margin-bottom: 10px;
+  margin-left: 0;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  font-size: 16px;
+  background-color: $black;
+  border-radius: 50%;
+  text-align: center;
+  color: $white;
+  font-weight: bolder;
 
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
-}
-
-#join-button {
-  background-color: $black;
-  border-radius: 50%;
-  text-align: center;
-  // height: 50px;
-  padding-top: 25%;
-  padding-bottom: 25%;
-  color: $white;
-  font-weight: bolder;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../data.json";
 import Card from "../components/Card.jsx";
@@ -6,6 +6,7 @@ import Card from "../components/Card.jsx";
 
 const GroupInfo = () => {
   const {groupName} = useParams()
+  // const [style, setStyle] = useState("red-cover-hidden")
   let targetGroup = ''
 
   const currentDate = new Date
@@ -19,30 +20,52 @@ const GroupInfo = () => {
   data.team.map(element => {
     if (element.name === groupName) {
       targetGroup = element
-    }});
+  }});
 
-    const confirmQuit = () => {
-      const ask = window.confirm(`Are you sure you want to quit ${targetGroup.name}`);
-        if (ask) {
-        window.location.href = "/oops";
-      }
+  const confirmQuit = () => {
+    const ask = window.confirm(`Are you sure you want to quit ${targetGroup.name}`);
+      if (ask) {
+      window.location.href = "/oops";
     }
+  }
+
+  const showMenuOption = () => {
+    const target = document.querySelector(".red-cover-hidden")
+    const target2 = document.querySelector(".button-hidden")
+
+    target.classList.remove("red-cover-hidden")
+    target.classList.add("red-cover-show")
+
+    target2.classList.remove("button-hidden")
+    target2.classList.add("button-show")
+
+  }
 
   return (
     <div>
-      <div className="upper-container">
-        <div className="button-option">
-          <ol>
-            <li><a href="/oops">Add my meal</a></li>
-            <li><a href="/oops">Message the group form</a></li>
-            <li onClick={confirmQuit} id="quit">Quit this group</li>
-          </ol>
-        </div>
+      <div className="button-hidden">
+        <ul>
+          <li><a href="/oops">From my recipe</a></li>
+          <li><a href="/oops">Create a new</a></li>
+          <li><a href="/oops">Back</a></li>
+
+        </ul>
+      </div>
+
+
+      <div className="red-cover-hidden"></div>
         <div className="text">
           <h1>This week for</h1>
           <h1>{targetGroup.name}...</h1>
         </div>
-      </div>
+
+        <div className="button-option">
+          <ol>
+            <li><a onClick={showMenuOption} href="#">Add my meal</a></li>
+            <li><a href="/oops">Group Forum</a></li>
+            <li onClick={confirmQuit} id="quit">Quit this group</li>
+          </ol>
+        </div>
 
       <div className="container">
         <div className="date">
