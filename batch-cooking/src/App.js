@@ -3,13 +3,16 @@ import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
 import data from "./data.json";
 
-import CookingGroup from "./CookingGroup.jsx";
+import CookingGroup from "./CookingGroup";
 import GroupInfo from "./pages/GroupInfo";
 import MyProfile from "./pages/MyProfile";
+import NewRecipe from "./pages/NewRecipe";
+import MyRecipe from "./pages/MyRecipe";
+
 import Oops from "./pages/Oops";
 
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -41,6 +44,14 @@ function App() {
                 <CookingGroup group = {group} />
               ))}
             </div>
+          </Route>
+
+          <Route path="/newrecipe">
+            <NewRecipe />
+          </Route>
+
+          <Route path="/myrecipe">
+            <MyRecipe />
           </Route>
         </Switch>
         <footer><Footer /></footer>

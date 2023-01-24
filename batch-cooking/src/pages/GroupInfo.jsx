@@ -31,24 +31,48 @@ const GroupInfo = () => {
 
   const showMenuOption = () => {
     const target = document.querySelector(".red-cover-hidden")
-    const target2 = document.querySelector(".button-hidden")
+    const targetButton = document.querySelector(".button-hidden")
 
     target.classList.remove("red-cover-hidden")
     target.classList.add("red-cover-show")
 
-    target2.classList.remove("button-hidden")
-    target2.classList.add("button-show")
+    targetButton.classList.remove("button-hidden")
+    targetButton.classList.add("button-show")
+  }
 
+  const goBack = () => {
+    const target = document.querySelector(".red-cover-show")
+    const targetButton = document.querySelector(".button-show")
+
+    target.classList.remove("red-cover-show")
+    target.classList.add("red-cover-hidden")
+
+    targetButton.classList.remove("button-show")
+    targetButton.classList.add("button-hidden")
+  }
+  const hoverInButton = () => {
+    const target3 = document.getElementById("newMeal")
+    target3.innerHTML = "+"
+  }
+  const hoverOutButton = () => {
+    const target4 = document.getElementById("newMeal")
+    target4.innerHTML = "New Meal"
   }
 
   return (
     <div>
       <div className="button-hidden">
         <ul>
-          <li><a href="/oops">From my recipe</a></li>
-          <li><a href="/oops">Create a new</a></li>
-          <li><a href="/oops">Back</a></li>
-
+          <li><a href="/myrecipe">From my recipe</a></li>
+          <li>
+            <a  id="newMeal"
+                onMouseOver={hoverInButton}
+                onMouseOut={hoverOutButton}
+                href="/newrecipe">
+                New Meal
+            </a>
+          </li>
+          <li><a onClick={goBack} href="#">Back</a></li>
         </ul>
       </div>
 
