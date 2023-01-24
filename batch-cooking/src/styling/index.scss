@@ -1,5 +1,26 @@
+$red: #AF5B5B;
+$orange: #FEAC48;
+$black: #222222;
+$white: #F6F4F3;
+
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+ul, ol {
+  list-style: none;
+}
+
 body {
   background-color: #AF5B5B;
   font-family: 'Inter', sans-serif;
   margin: 2% 5%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 1% 2%;
+  }
 }

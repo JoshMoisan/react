@@ -8,7 +8,7 @@ $white: #F6F4F3;
   justify-content: space-between;
   color: $white;
   padding: 5px;
-  margin-bottom: 7vh;
+  margin-bottom: 6vh;
   align-items: center;
   border-bottom: 1px solid $white;
 }
@@ -17,6 +17,19 @@ $white: #F6F4F3;
   margin-top: 25px;
   margin-bottom: 25px;
   font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: block;
+  }
+  .navbar h1 {
+    font-size: 48px;
+    margin-top: 5px;
+  }
+  .options li {
+    display: block ;
+  }
 }
 
 .options ul {
@@ -74,6 +87,7 @@ $white: #F6F4F3;
   background-color: $white;
   border-radius: 5%;
   right: 5%;
+  z-index: 10;
 }
 
 @keyframes fadeIn {

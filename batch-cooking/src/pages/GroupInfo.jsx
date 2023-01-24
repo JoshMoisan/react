@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../data.json";
 import Card from "../components/Card.jsx";
@@ -6,7 +6,6 @@ import Card from "../components/Card.jsx";
 
 const GroupInfo = () => {
   const {groupName} = useParams()
-  // const [style, setStyle] = useState("red-cover-hidden")
   let targetGroup = ''
 
   const currentDate = new Date
@@ -28,7 +27,6 @@ const GroupInfo = () => {
       window.location.href = "/oops";
     }
   }
-
   const showMenuOption = () => {
     const target = document.querySelector(".red-cover-hidden")
     const targetButton = document.querySelector(".button-hidden")
@@ -39,7 +37,6 @@ const GroupInfo = () => {
     targetButton.classList.remove("button-hidden")
     targetButton.classList.add("button-show")
   }
-
   const goBack = () => {
     const target = document.querySelector(".red-cover-show")
     const targetButton = document.querySelector(".button-show")

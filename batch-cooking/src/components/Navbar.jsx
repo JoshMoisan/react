@@ -22,27 +22,23 @@ const Navbar = () => {
       <div className="logo">
         <h1>YUMMY</h1>
       </div>
-      <div className="options">
+      <span className="options">
         <ul>
           <li>
             <a
-              href="/"
-              exact="/"
-            >
+              href="/">
               HOME
             </a>
           </li>
           <li>
           <a
-              href="/myprofile"
-            >
+              href="/myprofile">
               PROFILE
             </a>
           </li>
           <li>
-          <p  id="more"
-              onClick={dropdown}
-            >
+          <p id="more"
+              onClick={dropdown}>
               MORE <strong>+</strong>
             </p>
           </li>
@@ -54,7 +50,7 @@ const Navbar = () => {
           <a href="/oops" className="hidden">Logout</a>
         </div>
 
-      </div>
+      </span>
     </div>
   )
 }

@@ -9,7 +9,7 @@ $white: #F6F4F3;
   margin-bottom: 10vh;
 
 }
-.text h1{
+.text h1 {
   font-size: 64px;
   text-align: right;
   font-weight: 900;
@@ -46,6 +46,7 @@ $white: #F6F4F3;
     display: flex;
     justify-content: space-evenly;
     color: $white;
+    padding-left: 2%;
   }
   li {
     width: 20%;
@@ -111,6 +112,7 @@ $white: #F6F4F3;
   background: $red;
   color: $white;
 }
+
 .red-cover-hidden {
   display: none;
 }
@@ -130,7 +132,7 @@ $white: #F6F4F3;
 }
 
 .button-show {
-  ul{
+  ul {
     margin-top: 20vh;
     display: flex;
     flex-wrap: wrap;
@@ -138,7 +140,7 @@ $white: #F6F4F3;
     -webkit-animation: fade-in 1500ms ease-in-out both;
     animation: fade-in 1500ms ease-in-out both;
   }
-  li{
+  li {
     display: flex;
     z-index: 200;
     text-align: center;
@@ -161,11 +163,41 @@ $white: #F6F4F3;
     background: $red;
     color: $white;
   }
-  p{
-
-  }
 }
 
+@media screen and (max-width: 600px) {
+  .button-option ol {
+    display: block;
+    right: 10px;
+    margin: 5vh 0 0 10px
+  }
+  .button-option li {
+    margin-top: 5px;
+  }
+  .date h4 {
+    text-align: right;
+    font-weight: lighter;
+  }
+  .text h1 {
+    font-size: 32px;
+  }
+  .date h5 {
+    display: none;
+  }
+  .container {
+    display: block;
+  }
+  .week-meal ol {
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+  .week-meal li {
+    width: 45%;
+  }
+  #weekday {
+    margin-top: 25px;
+  }
+}
 
 @-webkit-keyframes fade-in {
   0% {
@@ -178,6 +210,7 @@ $white: #F6F4F3;
     opacity: 1;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;

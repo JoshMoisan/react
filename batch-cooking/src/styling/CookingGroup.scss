@@ -4,15 +4,6 @@ $black: #222222;
 $white: #F6F4F3;
 
 
-a {
-  text-decoration: none;
-  color: $white;
-}
-
-ul, ol {
-  list-style: none;
-}
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -24,14 +15,11 @@ ul, ol {
 .thumbnail img {
   margin: auto;
   width: 100%;
-  height: 200px;
-  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjEyIDc5MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgeD0iMTM3IiB5PSIzMjUiIHdpZHRoPSIzMzMiIGhlaWdodD0iMzMzIi8+DQo8Y2lyY2xlIGN4PSIzMDMuNSIgY3k9IjMyOS43NSIgcj0iMTY2LjUiLz4NCjwvc3ZnPg0K);
-  -webkit-mask-size: 100%;
-  -webkit-mask-position-y: -20px;
+  height: 300px;
+  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTMzLjEgNzkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MzMuMSA3OTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHk9IjI2Mi45IiB3aWR0aD0iNTMzLjEiIGhlaWdodD0iNTMzLjEiLz4NCjxjaXJjbGUgY3g9IjI2Ni41IiBjeT0iMjcwLjUiIHI9IjI2Ni41Ii8+DQo8L3N2Zz4NCg==);
   -webkit-mask-repeat: no-repeat;
   object-fit: cover;
   transition: all 500ms ease-in-out;
-
 }
 
 .thumbnail img:hover {
@@ -39,25 +27,25 @@ ul, ol {
   opacity: 0.5;
 }
 
-
 .box {
   display: flex;
   width: 200px;
-  margin: 3% 1.5%;
+  margin: 2% 1.5%;
   flex-direction: column;
   justify-content: space-evenly;
-  scale: 1.5;
+  justify-content: flex-start;
   cursor: pointer;
-
 }
 
 .box h4 {
   text-align: center;
   width: 100%;
   color: $white;
-  margin-top: 0;
+  margin: 0 auto;
   font-weight: 300;
+  font-size: 24px;
 }
+
 
 #participant img {
   height: 50px;
@@ -93,7 +81,19 @@ ul, ol {
   text-align: center;
   color: $white;
   font-weight: bolder;
+}
 
+@media screen and (max-width: 600px) {
+  .box {
+    width: 45%;
+  }
+  .box h4 {
+    font-size: 16px;
+  }
+  .thumbnail img {
+    height: 220px;
+    -webkit-mask-position-x: 12px;
+  }
 }
 
 @keyframes fadeIn {

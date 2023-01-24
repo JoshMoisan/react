@@ -9,13 +9,13 @@ const Footer = () => {
         <h3>BatchCooking made fun</h3>
       </div>
 
-      <div>
+      <span>
         <ul>
-          <li><a href="/oops">Contact Us</a></li>
-          <li><a href="/oops">Career</a></li>
+          <li><a href="/oops">Contact Us </a></li>
+          <li><a href="/oops">Career </a></li>
           <li><a href="/oops">Connect with us</a></li>
         </ul>
-      </div>
+      </span>
     </div>
   )
 }
