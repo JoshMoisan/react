@@ -1,0 +1,6 @@
+1. Fix join+People thumbnail positionning
+2. path to myrecipe + newrecipe
+3. Media queries
+4. Side bar filter
+5. Seeds fake db
+6. Logo Yummy
