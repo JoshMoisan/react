@@ -4,3 +4,4 @@
 4. Side bar filter
 5. Seeds fake db
 6. Logo Yummy
+7. Landing page

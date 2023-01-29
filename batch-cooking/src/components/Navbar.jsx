@@ -4,6 +4,9 @@ import React from "react";
 const Navbar = () => {
 
   const dropdown = () => {
+    const dropdownbox = document.getElementById("dropdownbox")
+    dropdownbox.classList.toggle("dropdown-menu")
+
     const dropdownMenu = document.querySelectorAll(".hidden")
     dropdownMenu.forEach(element => {
       element.classList.toggle("show-menu")
@@ -26,7 +29,7 @@ const Navbar = () => {
         <ul>
           <li>
             <a
-              href="/">
+              href="/index">
               HOME
             </a>
           </li>
@@ -43,13 +46,12 @@ const Navbar = () => {
             </p>
           </li>
         </ul>
-        <div className="dropdown-menu">
+        <div id="dropdownbox">
           <a href="/oops" className="hidden">Create a group</a>
           <a href="/oops" className="hidden">My messages</a>
           <a href="/oops" className="hidden">My recipes</a>
           <a href="/oops" className="hidden">Logout</a>
         </div>
-
       </span>
     </div>
   )

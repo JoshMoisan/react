@@ -17,20 +17,9 @@ $white: #F6F4F3;
   margin-top: 25px;
   margin-bottom: 25px;
   font-weight: bolder;
+  font-size: 96px;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar {
-    display: block;
-  }
-  .navbar h1 {
-    font-size: 48px;
-    margin-top: 5px;
-  }
-  .options li {
-    display: block ;
-  }
-}
 
 .options ul {
   padding: 0;
@@ -63,7 +52,6 @@ $white: #F6F4F3;
 }
 
 .show-menu {
-  // display: inline-block !important;
   display: block !important;
   padding: 10px !important;
   margin: 0;
@@ -86,11 +74,26 @@ $white: #F6F4F3;
   position: absolute;
   background-color: $white;
   border-radius: 5%;
-  right: 5%;
+  right: 0%;
   z-index: 10;
+  display: block;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: block;
+  }
+  .navbar h1 {
+    font-size: 48px;
+    margin-top: 5px;
+  }
+  .options ul {
+    display: flex;
+    justify-content: space-around;
+  }
+ }

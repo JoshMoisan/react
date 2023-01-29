@@ -1,30 +1,32 @@
-import { useState } from 'react'
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
-import data from "./data.json";
-
-import CookingGroup from "./CookingGroup";
-import GroupInfo from "./pages/GroupInfo";
+import Landing from "./pages/Landing";
+import Index from "./pages/Index";
 import MyProfile from "./pages/MyProfile";
+import Oops from "./pages/Oops";
+import GroupInfo from "./pages/GroupInfo";
 import NewRecipe from "./pages/NewRecipe";
 import MyRecipe from "./pages/MyRecipe";
-
-import Oops from "./pages/Oops";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 
+
+
+
 function App() {
-  const[groups, setGroups] = useState(data.team)
-  // console.log(groups)
-
-
   return (
     <Router>
       <div>
         <nav><Navbar /></nav>
+
         <Switch>
+
+
+          <Route path='/index'>
+            <Index />
+          </Route>
 
           <Route path='/myprofile'>
             <MyProfile />
@@ -38,13 +40,6 @@ function App() {
             <GroupInfo />
           </Route>
 
-          <Route>
-            <div className="grid">
-              {groups.map((group) => (
-                <CookingGroup group = {group} />
-              ))}
-            </div>
-          </Route>
 
           <Route path="/newrecipe">
             <NewRecipe />
@@ -53,7 +48,13 @@ function App() {
           <Route path="/myrecipe">
             <MyRecipe />
           </Route>
+
+          <Route>
+            <Landing />
+          </Route>
+
         </Switch>
+
         <footer><Footer /></footer>
       </div>
     </Router>

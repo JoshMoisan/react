@@ -46,35 +46,31 @@ $white: #F6F4F3;
   font-size: 24px;
 }
 
-
-#participant img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  -webkit-filter: grayscale(100%);
-  object-fit: cover;
-  cursor: auto;
-  margin-bottom: 10px;
-}
-
 .little-avatar {
+  // SHOULD BE ON TOP OF THUMNAIL
+  position: absolute;
   width: 25%;
   animation: fadeIn 500ms;
-  position: absolute;
   z-index: 100;
-  flex-wrap: wrap;
   flex-direction: column;
-  top: 5%;
+  img {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+    object-fit: cover;
+    cursor: auto;
+    margin-bottom: 10px;
+  }
 }
 
 #join-button {
   width: 56px;
   margin-bottom: 10px;
   margin-left: 0;
-
   padding-top: 17px;
   padding-bottom: 17px;
-
   font-size: 16px;
   background-color: $black;
   border-radius: 50%;

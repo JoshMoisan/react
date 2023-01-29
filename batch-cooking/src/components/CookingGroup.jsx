@@ -17,7 +17,7 @@ return (
         <div className="thumbnail">
           <img src={group.thumbnail} onClick={()=>showAvatar(group.name)} alt={group.name} id={group.name} />
         </div>
-        {openedId === group.name && <div className='little-avatar' id="participant" style={{display:display}}>
+          {openedId === group.name && <div className='little-avatar' style={{display:display}}>
               <a href={`/${group.name}`}>
                 <p id='join-button'>JOIN</p>
               </a>
