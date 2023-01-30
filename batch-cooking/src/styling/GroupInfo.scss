@@ -133,7 +133,6 @@ $white: #F6F4F3;
 
 .button-show {
   ul {
-    margin-top: 20vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -150,13 +149,13 @@ $white: #F6F4F3;
     border-radius: 50%;
     background-color: $white;
     border: 1px solid $white;
-    width: 250px;
-    height: 150px;
+    width: 20vw;
+    height: 20vw;
     font-size: 32px;
     color: $red;
     font-weight: bolder;
     transition: all 350ms ease-in-out;
-    padding-top: 100px;
+    padding-top: 7vw;
   }
   a:hover {
     border: 1px solid $white;
@@ -197,6 +196,22 @@ $white: #F6F4F3;
   #weekday {
     margin-top: 25px;
   }
+  .button-show a {
+    font-size: 24px;
+    width: 23vh;
+    height: 23vh;
+    padding-top: 9vh;
+    margin: 8px;
+  }
+  .button-show li{
+    justify-content: center;
+  }
+  .button-show ul {
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
 }
 
 @-webkit-keyframes fade-in {

@@ -23,6 +23,13 @@ function App() {
 
         <Switch>
 
+          <Route path="/newrecipe">
+            <NewRecipe />
+          </Route>
+
+          <Route path="/myrecipe">
+            <MyRecipe />
+          </Route>
 
           <Route path='/index'>
             <Index />
@@ -38,15 +45,6 @@ function App() {
 
           <Route path='/:groupName'>
             <GroupInfo />
-          </Route>
-
-
-          <Route path="/newrecipe">
-            <NewRecipe />
-          </Route>
-
-          <Route path="/myrecipe">
-            <MyRecipe />
           </Route>
 
           <Route>
