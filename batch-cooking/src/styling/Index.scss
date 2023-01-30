@@ -23,6 +23,26 @@ body {
   margin: 2% 5%;
 }
 
+button {
+  display: block;
+  color: $red;
+  background-color:  $white;
+  border: 1px solid $white;
+  padding: 8px 0;
+  border-radius: 50px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 350ms ease-in-out;
+  margin-left: 10px;
+}
+
+button:hover {
+  border: 1px solid $white;
+  background: $red;
+  color: $white;
+}
+
 .button-std {
   display: block;
   color: $red;
