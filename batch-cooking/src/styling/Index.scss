@@ -18,7 +18,10 @@ ul, ol {
 }
 
 body {
-  background-color: #AF5B5B;
+  // background-color: #AF5B5B;
+  background-image: url(../images/background.jpeg);
+  background-size: 100vw;
+  background-repeat: none;
   font-family: 'Inter', sans-serif;
   margin: 2% 5%;
 }

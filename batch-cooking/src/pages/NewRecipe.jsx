@@ -4,7 +4,7 @@ const newRecipe = () => {
 
 
   return (
-    <div>
+    <div className="container">
 
       <div className="wave-droite">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F6F4F3" fill-opacity="1" d="M0,160L48,133.3C96,107,192,53,288,69.3C384,85,480,171,576,213.3C672,256,768,256,864,224C960,192,1056,128,1152,106.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -28,9 +28,7 @@ const newRecipe = () => {
 
             <label> Allergies </label>
 
-
             <br className="line-skip" />
-
 
             <label for="choice1"> Fish      </label>
               <input type="checkbox" className="choice" id="choice1" name="choice1" value="Fish" />

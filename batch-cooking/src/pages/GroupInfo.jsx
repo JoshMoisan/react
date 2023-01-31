@@ -11,6 +11,7 @@ const GroupInfo = () => {
   const currentDate = new Date
   let day = currentDate.getDate();
   let month = currentDate.getMonth();
+
   const monthName= ["January","February","March","April","May","June","July",
             "August","September","October","November","December"];
   const arrNumber =[0,1,2,3,4]
@@ -57,7 +58,7 @@ const GroupInfo = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       <div className="button-hidden">
         <ul>
           <li><a href="/myrecipe">From my recipe</a></li>
@@ -88,11 +89,12 @@ const GroupInfo = () => {
           </ol>
         </div>
 
-      <div className="container">
+      <div className="menu-box">
         <div className="date">
           <h5>{monthName[month]} {day-7}th </h5>
           <h4>{monthName[month]} {day}th </h4>
-          <h5>{monthName[month]} {day+7}th </h5>
+          {/* CHECK DATE HERE */}
+          <h5>{day + 7 > 31 ? monthName[month + 1] : monthName[month] } {day + 7 > 31 ? "6" : day + 7 }th </h5>
         </div>
 
         <div className="week-meal">
