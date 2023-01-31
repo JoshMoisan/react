@@ -26,6 +26,10 @@ $white: #F6F4F3;
   // opacity: 0.4;
 }
 
+.line-skip {
+  display: none;
+}
+
 .form {
   margin: 0 5vw 1vh 10vw;
 
@@ -74,7 +78,6 @@ $white: #F6F4F3;
 }
 
 .arch-picture{
-
   flex-grow: 2;
   background-color: $white;
   width: 100%;
@@ -85,4 +88,49 @@ $white: #F6F4F3;
   object-fit: cover;
   max-width: 300px;
   min-width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .meal-box {
+    flex-direction: column-reverse;
+    margin-top: 4vh;
+  }
+  .options-recipe {
+    justify-content: space-evenly;
+  }
+  .form {
+    label {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    #meal-title {
+      width: 75vw;
+    }
+
+    .choice {
+      width: 20px;
+      height: 20px;
+    }
+
+    #meal-description {
+      width: 75vw;
+    }
+  }
+
+  .text h1:first-child {
+    right: 0;
+  }
+
+  .line-skip {
+    display: block;
+  }
+
+  .arch-picture {
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-mask-image: none;
+  }
+
 }

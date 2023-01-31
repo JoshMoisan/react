@@ -10,6 +10,7 @@ import './styling/MyProfile.scss';
 import './styling/MyRecipe.scss';
 import './styling/Navbar.scss';
 import './styling/NewRecipe.scss';
+import './styling/Landing.scss';
 import './styling/Oops.scss';
 
 

@@ -47,14 +47,12 @@ $white: #F6F4F3;
 }
 
 .little-avatar {
-  // SHOULD BE ON TOP OF THUMNAIL
   position: absolute;
   width: 25%;
   animation: fadeIn 500ms;
   z-index: 100;
   flex-direction: column;
   img {
-
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -63,6 +61,14 @@ $white: #F6F4F3;
     cursor: auto;
     margin-bottom: 10px;
   }
+}
+
+.ball {
+  display: flex;
+  position: absolute;
+  top: -300px;
+  flex-direction: column;
+  scale: 1.2;
 }
 
 #join-button {
@@ -89,6 +95,10 @@ $white: #F6F4F3;
   .thumbnail img {
     height: 220px;
     -webkit-mask-position-x: 12px;
+  }
+  .ball {
+    scale: 1;
+    top: -250px;
   }
 }
 

@@ -31,6 +31,10 @@ $white: #F6F4F3;
 }
 
 @media screen and (max-width: 600px) {
+  .footer {
+    margin-top: 15vh;
+  }
+
   .footer h3 {
     display: none;
   }
