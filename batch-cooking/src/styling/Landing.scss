@@ -3,12 +3,76 @@ $orange: #FEAC48;
 $black: #222222;
 $white: #F6F4F3;
 
-.landing-title h1 {
-  font-size: 64px !important;
-  font-weight: 900;
-  color: $white;
-  margin-bottom: 5vh;
+.landing-text {
+  h1 {
+    font-size: 64px !important;
+    font-weight: 900;
+    color: $white;
+  }
 }
+.access {
+  position: fixed;
+  top: 14vh;
+  right: 5vw;
+  z-index: 10;
+}
+.first-message {
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(../images/banner.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 25px;
+  margin-bottom: 5vh;
+  h1 {
+    margin: 5.5vh auto;
+    padding: 5%
+  }
+  h3 {
+    padding: 15%;
+    color: $white;
+    -webkit-animation: fade-in-landing 3s ease-in-out both;
+    animation: fade-in-landing 3s ease-in-out both;
+  }
+}
+
+.second-message{
+  text-align: right;
+  margin-bottom: 20vh;
+}
+
+.third-message-hidden{
+  // visibility: hidden;
+  display: none;
+}
+
+.third-message-show {
+  display: block !important;
+  // visibility: visible !important;
+  margin-bottom: 20vh;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-weight: 500;
+    margin: 5vh auto;
+    text-align: center;
+    text-shadow: 1px 0 $white, -1px 0 $white, 0 1px $white, 0 -1px $white,
+               1px 1px $white, -1px -1px $white, 1px -1px $white, -1px 1px $white;
+    transition: all 250ms ease-in-out;
+  }
+  h1:hover {
+    color: $red;
+  }
+}
+
+
+// CLASS BOOSTRAP HARDCODED
 
 .carousel-caption {
   position: relative !important;
@@ -21,16 +85,33 @@ $white: #F6F4F3;
   border-radius: 25px;
 }
 
-.access {
-  position: fixed;
-  bottom: 5vh;
-  right: 5vw;
-  z-index: 10;
-}
-
 .carousel-control-next, .carousel-control-prev {
   height: 80%;
 }
+
+// CLASS BOOSTRAP HARDCODED
+
+@-webkit-keyframes fade-in-landing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-landing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
 
 @media screen and (max-width: 600px) {
   .access {

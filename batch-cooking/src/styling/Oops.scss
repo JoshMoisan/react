@@ -5,9 +5,13 @@ $white: #F6F4F3;
 
 
 .container-oops {
+  height: 100vh;
+  display: flex;
   height: 50vh;
+  flex-direction: column;
+  align-items: center;
   h1, h2 {
-    color: $black;
+    color: $orange;
     text-align: center;
   }
   h1 {
@@ -15,23 +19,10 @@ $white: #F6F4F3;
   }
 }
 
-#quit-unique {
-  display: block;
-  color: $red;
-  background-color: $white;
-  border: 1px solid $white;
-  padding: 8px 24px;
-  border-radius: 50px;
-  width: 200px;
-  text-align: center;
-  font-weight: bold;
-  transition: all 350ms ease-in-out;
-  cursor: pointer;
-  margin: 10vh auto;
+#back-button {
+  margin-top: 5vh;
 }
 
-#quit-unique:hover {
-  border: 1px solid $white;
-  background: $red;
-  color: $white;
+.construction {
+  width: 40vh;
 }

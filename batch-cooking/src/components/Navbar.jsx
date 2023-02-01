@@ -49,7 +49,7 @@ const Navbar = () => {
         <div id="dropdownbox">
           <a href="/oops" className="hidden">Create a group</a>
           <a href="/oops" className="hidden">My messages</a>
-          <a href="/oops" className="hidden">My recipes</a>
+          <a href="/myrecipe" className="hidden">My recipes</a>
           <a href="/oops" className="hidden">Logout</a>
         </div>
       </span>
