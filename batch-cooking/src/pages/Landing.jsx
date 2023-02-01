@@ -1,25 +1,15 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import BSCarousel from '../components/BSCarousel'
+import { useInView } from "react-intersection-observer";
+
 
 
 function Landing() {
   // const elementScroll = document.getElementById("scroll-appear")
-  const myRef = useRef()
 
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      c
-    })
-   }, []);
+  const { ref: myRef, inView: myElementIsVisible, entry } = useInView()
 
-  const scrollAppear = () => {
-    console.log(`Window scroll Y = ${window.scrollY}`)
-    if (window.scrollY >= 500) {
-      console.log(myRef.current)
-      myRef.current.classList.add("third-message-show")
-    }
-  }
 
   return (
     <div className='container'>
@@ -36,7 +26,7 @@ function Landing() {
           <h2>Cook one meal eat 5 differents</h2>
         </div>
 
-        <div className="third-message-hidden" ref={myRef} id='scroll-appear'>
+        <div className={myElementIsVisible ? "third-message-show" : "third-message-hidden"} ref={myRef} id='scroll-appear'>
           <ul>
             <li><h1>DISCOVER</h1></li>
             <li><h1>MEET</h1></li>

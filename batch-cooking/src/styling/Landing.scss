@@ -43,14 +43,16 @@ $white: #F6F4F3;
 }
 
 .third-message-hidden{
-  // visibility: hidden;
-  display: none;
+  visibility: hidden;
+  // display: none;
 }
 
 .third-message-show {
-  display: block !important;
-  // visibility: visible !important;
+  // display: block !important;
+  visibility: visible !important;
   margin-bottom: 20vh;
+  -webkit-animation: fade-in-landing 2s ease-in-out both;
+  animation: fade-in-landing 2s ease-in-out both;
   ul {
     display: flex;
     justify-content: space-between;
