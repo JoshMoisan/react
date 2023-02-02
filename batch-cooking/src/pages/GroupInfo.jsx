@@ -91,9 +91,9 @@ const GroupInfo = () => {
 
       <div className="menu-box">
         <div className="date">
-          <h5>{monthName[month]} {day-7}th </h5>
-          <h4>{monthName[month]} {day}th </h4>
           {/* CHECK DATE HERE */}
+          <h5>{day - 7 <= 0 ? monthName[month - 1] : monthName[month] } {day - 7 <= 0 ? "30" : day - 7 }th </h5>
+          <h4>{monthName[month]} {day}th </h4>
           <h5>{day + 7 > 31 ? monthName[month + 1] : monthName[month] } {day + 7 > 31 ? "6" : day + 7 }th </h5>
         </div>
 

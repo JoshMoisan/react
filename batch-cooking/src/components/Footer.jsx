@@ -11,7 +11,7 @@ const Footer = () => {
 
       <span>
         <ul>
-          <li><a href="/oops">Contact Us </a></li>
+          <li><a href="https://www.linkedin.com/in/josh-moisan-webdev/" target="_blank">Contact Us </a></li>
           <li><a href="/oops">Career </a></li>
           <li><a href="/oops">Connect with us</a></li>
         </ul>
