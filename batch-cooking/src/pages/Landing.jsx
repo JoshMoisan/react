@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
-import BSCarousel from '../components/BSCarousel'
 import { useInView } from "react-intersection-observer";
+
+import BSCarousel from '../components/BSCarousel'
+import HistoryCard from '../components/HistoryCard'
+
+import diagramme from "../images/diagramme.png";
 
 
 
 function Landing() {
-  // const elementScroll = document.getElementById("scroll-appear")
-
-
   const { ref: myRef, inView: myElementIsVisible} = useInView()
+
 
 
   return (
@@ -16,14 +18,34 @@ function Landing() {
 
       <div className="landing-text">
         <div className="first-message">
-          <h1>What are we ?</h1>
-          <h3>Share your meal with other <strong><em>batch cooker</em></strong> <u>so you don't eat the same thing all week</u></h3>
+          <h1>What are <em>we</em> ?</h1>
+          <h3>Share your meal with other <strong>batch cooker</strong> <u>so you don't eat the same thing all week</u></h3>
         </div>
 
         <div className="second-message">
-          <h1>So basically...</h1>
-          <h2>Cook one meal eat 5 different</h2>
-          <img src="https://www.whiskcooks.com/wp-content/uploads/2023/01/slide-cooking-unsplash-1-1.jpg" alt="" />
+          <div className="second-message-diagram">
+            <h1>So basically...</h1>
+            <h2>Cook one meal eat 5 different</h2>
+            <img src={diagramme} alt="diagramme" />
+          </div>
+          <div className="second-message-history">
+            <HistoryCard
+            title = "Good way to make friends"
+            description = "I'm new in this neighboor, everybody so friendly"
+             />
+            <HistoryCard
+            title = "Can't get enough of Layla's chicken burger !"
+            description = "She won't give me the secret"
+             />
+            <HistoryCard
+            title = "Loveddd it"
+            description = "5 stars join, join @Little-Haiti"
+             />
+            <HistoryCard
+            title = "I've been waiting for that "
+            description = "I had this idea 3-4 years ago"
+             />
+          </div>
         </div>
 
         <div className={myElementIsVisible ? "third-message-show" : "third-message-hidden"} ref={myRef} id='scroll-appear'>
@@ -35,7 +57,6 @@ function Landing() {
           </ul>
         </div>
       </div>
-
 
       <BSCarousel />
 

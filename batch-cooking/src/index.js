@@ -12,6 +12,8 @@ import './styling/Navbar.scss';
 import './styling/NewRecipe.scss';
 import './styling/Landing.scss';
 import './styling/Oops.scss';
+import './styling/HistoryCard.scss';
+
 
 
 
