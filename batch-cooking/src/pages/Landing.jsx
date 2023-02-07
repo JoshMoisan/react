@@ -8,8 +8,10 @@ import diagramme from "../images/diagramme.png";
 
 
 
+
 function Landing() {
   const { ref: myRef, inView: myElementIsVisible} = useInView()
+  const { ref: historyRef, inView: myHistoriesAreVisible} = useInView()
 
 
 
@@ -19,16 +21,16 @@ function Landing() {
       <div className="landing-text">
         <div className="first-message">
           <h1>What are <em>we</em> ?</h1>
-          <h3>Share your meal with other <strong>batch cooker</strong> <u>so you don't eat the same thing all week</u></h3>
+          <h3>Yummy is a platform where you <br /> Share your meal with other <strong>batch cooker</strong> <u>so you don't eat the same thing all week</u></h3>
         </div>
 
-        <div className="second-message">
+        <div className="second-message" >
           <div className="second-message-diagram">
             <h1>So basically...</h1>
             <h2>Cook one meal eat 5 different</h2>
             <img src={diagramme} alt="diagramme" />
           </div>
-          <div className="second-message-history">
+          <div className={myHistoriesAreVisible ? "second-message-history" : "second-message-history-hidden"} ref={historyRef}>
             <HistoryCard
             title = "Good way to make friends"
             description = "I'm new in this neighboor, everybody so friendly"
@@ -39,7 +41,7 @@ function Landing() {
              />
             <HistoryCard
             title = "Loveddd it"
-            description = "5 stars join, join @Little-Haiti"
+            description = "5 stars, join @Little-Haiti for a great group"
              />
             <HistoryCard
             title = "I've been waiting for that "
@@ -48,7 +50,7 @@ function Landing() {
           </div>
         </div>
 
-        <div className={myElementIsVisible ? "third-message-show" : "third-message-hidden"} ref={myRef} id='scroll-appear'>
+        <div className={myElementIsVisible ? "third-message-show" : "third-message-hidden"} ref={myRef}>
           <ul>
             <li><h1>DISCOVER</h1></li>
             <li><h1>MEET</h1></li>

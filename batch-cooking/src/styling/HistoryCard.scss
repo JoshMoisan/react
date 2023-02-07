@@ -3,28 +3,26 @@ $orange: #FEAC48;
 $black: #222222;
 $white: #F6F4F3;
 
-.card-container-hidden {
-  visibility: hidden;
-}
+
 
 .card-container {
-  visibility: visible;
+  color: $white;
   display: flex;
-  background-color: $white;
+  border: 2px solid $white;
   border-radius: 25px;
-  transition: all 1s ease-in-out;
+  transition: all 700ms ease-in-out;
   padding: 10px;
   margin-bottom: 5%;
   img {
+    -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTMzLjEgNzkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MzMuMSA3OTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHk9IjI2Mi45IiB3aWR0aD0iNTMzLjEiIGhlaWdodD0iNTMzLjEiLz4NCjxjaXJjbGUgY3g9IjI2Ni41IiBjeT0iMjcwLjUiIHI9IjI2Ni41Ii8+DQo8L3N2Zz4NCg==);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position-x: 13px;
+    object-fit: cover;
+    flex-direction: column;
     margin-right: 10px;
     width: 100px;
-    border-radius: 50%;
-    border: 1px solid $black;
-  }
 
-  // BUG to fix
-  // -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	//         animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
 }
 
 .card-container:last-child {
@@ -33,19 +31,9 @@ $white: #F6F4F3;
 
 .card-container:hover {
   scale: 1.1;
-  box-shadow: 5px 10px $black;
-  opacity: 0.9;
+  background: $white;
+  color: $black;
 }
-
-// @media screen and (max-width: 600px) {
-//   .card-container-hidden {
-//     visibility: visible;
-//   }
-//   .card-container {
-//     animation: none;
-//     -webkit-animation: none;
-//   }
-// }
 
 @media screen and (max-width: 600px) {
   .card-container {
@@ -59,29 +47,5 @@ $white: #F6F4F3;
   }
   .card-container:last-child {
     margin-bottom: 75px;
-  }
-}
-@-webkit-keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
   }
 }

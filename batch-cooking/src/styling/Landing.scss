@@ -17,7 +17,7 @@ $white: #F6F4F3;
   z-index: 10;
 }
 .first-message {
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url(../images/banner.jpg);
+  background: url(../images/CuisineBanner.png);
   height: 60vh;
   background-position: center;
   background-size: cover;
@@ -55,6 +55,17 @@ $white: #F6F4F3;
   h1, h2 {
     color: $red;
   }
+}
+
+
+.second-message-history-hidden {
+  visibility: hidden;
+}
+
+.second-message-history {
+  visibility: visible;
+  -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .third-message-hidden{
@@ -124,6 +135,31 @@ $white: #F6F4F3;
   }
 }
 
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .access {
     top: auto;
@@ -150,10 +186,10 @@ $white: #F6F4F3;
   }
 
  .third-message-show {
-  margin-bottom: 10vh;
-  h1{
-    padding: 10px;
-    margin: 0;
+    margin-bottom: 10vh;
+    h1{
+      padding: 10px;
+      margin: 0;
+    }
   }
- }
 }
