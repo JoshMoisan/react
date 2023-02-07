@@ -3,6 +3,13 @@ $orange: #FEAC48;
 $black: #222222;
 $white: #F6F4F3;
 
+.index h1 {
+  color: $white;
+  font-size: 64px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
 .grid {
   display: flex;

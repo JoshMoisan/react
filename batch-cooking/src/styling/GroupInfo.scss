@@ -48,10 +48,13 @@ $white: #F6F4F3;
     width: 20%;
     text-align: center;
     padding-right: 2%;
+    transition: 1s ease-in-out;
   }
   li:hover {
     scale: 1.2;
     opacity: 0.5;
+    border: 2px solid $white;
+    z-index: 100;
   }
   h3, h4 {
     margin-top: 0;

@@ -9,10 +9,13 @@ function Index() {
 
 
   return (
-    <div className="grid">
-      {groups.map((group) => (
-        <CookingGroup group = {group} />
-      ))}
+    <div className="index">
+      <h1>Which group are you joining ?</h1>
+      <div className="grid">
+        {groups.map((group) => (
+          <CookingGroup group = {group} />
+        ))}
+      </div>
     </div>
   );
 }
