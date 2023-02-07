@@ -1,5 +1,7 @@
-2. path to myrecipe
-4. Side bar filter
-5. Seeds fake db
-6. Logo Yummy
-8. MyProfile page
+1. My Recipe
+2. My Profile
+3. SideBar
+4. Logo
+5. Push to Heroku
+
+

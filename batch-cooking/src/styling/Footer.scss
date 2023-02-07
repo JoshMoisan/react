@@ -3,6 +3,7 @@ $orange: #FEAC48;
 $black: #222222;
 $white: #F6F4F3;
 
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -25,10 +26,6 @@ $white: #F6F4F3;
   padding: 0;
 }
 
-.footer h3 {
-  font-size: 36px;
-}
-
 .connect-social {
   text-align: right;
   font-size: 24px;
@@ -44,7 +41,7 @@ $white: #F6F4F3;
   .footer {
     margin-top: 15vh;
   }
-  .footer h3 {
+  .footer h4 {
     display: none;
   }
   .footer a {

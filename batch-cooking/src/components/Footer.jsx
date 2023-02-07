@@ -12,7 +12,7 @@ const Footer = () => {
     <div>
       <div className="footer">
         <div>
-          <h3>BatchCooking made fun !</h3>
+          <h4>BatchCooking made fun !</h4>
         </div>
 
         <div>

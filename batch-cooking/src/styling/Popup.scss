@@ -1,0 +1,23 @@
+$red: #AF5B5B;
+$orange: #FEAC48;
+$black: #222222;
+$white: #F6F4F3;
+
+.background-cover {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  z-index: 100;
+}
+
+.popup-container {
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  background-color: $red;
+  border-radius: 20px;
+  z-index: 101;
+  width: 40vw;
+}
