@@ -4,7 +4,6 @@ $black: #222222;
 $white: #F6F4F3;
 
 .index h1 {
-  color: $white;
   font-size: 64px;
   font-weight: 900;
   text-align: center;
@@ -47,7 +46,6 @@ $white: #F6F4F3;
 .box h4 {
   text-align: center;
   width: 100%;
-  color: $white;
   margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
@@ -88,11 +86,13 @@ $white: #F6F4F3;
   background-color: $black;
   border-radius: 50%;
   text-align: center;
-  color: $white;
   font-weight: bolder;
 }
 
 @media screen and (max-width: 600px) {
+  .index h1 {
+    font-size: 32px;
+  }
   .box {
     width: 45%;
   }

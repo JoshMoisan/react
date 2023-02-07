@@ -26,15 +26,24 @@ $white: #F6F4F3;
 }
 
 .footer h3 {
-  color: $white;
   font-size: 36px;
+}
+
+.connect-social {
+  text-align: right;
+  font-size: 24px;
+  span {
+    padding-left: 15px;
+  }
+  svg:hover {
+    scale: 1.2;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .footer {
     margin-top: 15vh;
   }
-
   .footer h3 {
     display: none;
   }
@@ -42,5 +51,8 @@ $white: #F6F4F3;
     display: inline-flex;
     font-size: 12px;
     padding: 5px;
+  }
+  .connect-social {
+    font-size: 16px;
   }
 }

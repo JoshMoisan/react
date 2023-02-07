@@ -8,7 +8,6 @@ $white: #F6F4F3;
   font-size: 64px;
   text-align: right;
   font-weight: 900;
-  color: $white;
   position: relative;
   animation: fade-in 1s ease-in-out both;
   margin-bottom: 0;
@@ -20,7 +19,6 @@ $white: #F6F4F3;
 }
 
 .date {
-  color: $white;
   h5 {
     opacity: 0.4;
     font-weight: lighter;
@@ -41,7 +39,6 @@ $white: #F6F4F3;
   ol {
     display: flex;
     justify-content: space-evenly;
-    color: $white;
     padding-left: 2%;
   }
   li {
@@ -53,7 +50,6 @@ $white: #F6F4F3;
   li:hover {
     scale: 1.2;
     opacity: 0.5;
-    border: 2px solid $white;
     z-index: 100;
   }
   h3, h4 {
@@ -112,7 +108,6 @@ $white: #F6F4F3;
 .button-option a:hover, #quit:hover {
   border: 1px solid $white;
   background: $red;
-  color: $white;
 }
 
 .red-cover-hidden {
@@ -162,7 +157,6 @@ $white: #F6F4F3;
   a:hover {
     border: 1px solid $white;
     background: $red;
-    color: $white;
   }
 }
 
