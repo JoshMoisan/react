@@ -4,7 +4,26 @@ $black: #222222;
 $white: #F6F4F3;
 
 
-.myrecipe {
-  display: flex;
-  justify-content: space-between;
+#myrecipe {
+  border-radius: 25px;
+  border: 2px solid $white;
+  padding: 10px;
 }
+
+#title-myrecipe {
+  rotate: 90deg;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  position: absolute;
+  right: -2%;
+  top: 42%;
+}
+
+@media screen and (max-width: 600px) {
+  #title-myrecipe {
+    position: relative;
+    font-size: 32px;
+    rotate: 0deg;
+  }
+ }

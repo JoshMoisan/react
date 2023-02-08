@@ -66,7 +66,7 @@ function Landing() {
       <br />
       <br />
 
-      <a href="/index" className="button-std access">ACCESS</a>
+      <a href="/index" className="button-std access">BEGIN</a>
     </div>
   );
 }

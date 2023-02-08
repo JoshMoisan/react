@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Popup from './Popup'
 
-const RecipeCard = ({ recipeName, recipeImg }) => {
+const RecipeCard = ({ recipeName, recipeImg, recipeDesc }) => {
   const [showPopup, setShowPopup] = useState(false);
 
   const handleClick = () => {
@@ -17,7 +17,10 @@ const RecipeCard = ({ recipeName, recipeImg }) => {
         <h4>{recipeName}</h4>
       </div>
       {showPopup && (
-        <Popup />
+        <Popup
+        handleClose={handleClick}
+        recipeName={recipeName}
+        recipeDesc={recipeDesc}/>
       )}
     </>
   );
