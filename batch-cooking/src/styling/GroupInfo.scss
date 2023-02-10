@@ -4,7 +4,7 @@ $black: #222222;
 $white: #F6F4F3;
 
 
-.text h1 {
+.group-info h1 {
   font-size: 64px;
   text-align: right;
   font-weight: 900;
@@ -14,7 +14,7 @@ $white: #F6F4F3;
   margin-top: 0;
 }
 
-.text h1:first-child{
+.group-info h1:first-child{
   right: 15%;
 }
 
@@ -135,6 +135,7 @@ $white: #F6F4F3;
     justify-content: space-between;
     -webkit-animation: fade-in 1500ms ease-in-out both;
     animation: fade-in 1500ms ease-in-out both;
+    padding-left: 0;
   }
   li {
     display: flex;
@@ -173,7 +174,7 @@ $white: #F6F4F3;
     text-align: right;
     font-weight: lighter;
   }
-  .text h1 {
+  .group-info h1 {
     font-size: 32px;
   }
   .date h5 {

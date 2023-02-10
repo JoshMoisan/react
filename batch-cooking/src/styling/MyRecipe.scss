@@ -20,6 +20,12 @@ $white: #F6F4F3;
   top: 42%;
 }
 
+#add-recipe {
+  position: absolute;
+  right: 12%;
+  margin-top: 2%;
+}
+
 @media screen and (max-width: 600px) {
   #title-myrecipe {
     position: relative;

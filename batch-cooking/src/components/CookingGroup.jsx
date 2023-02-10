@@ -22,8 +22,8 @@ return (
               <a href={`/${group.name}`}>
                 <p id='join-button'>JOIN</p>
               </a>
-              <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHVtYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="avatar2" />
-              <img src="https://images.unsplash.com/photo-1596215143922-eedeaba0d91c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="avatar3" />
+              <img src="https://cdn.pixabay.com/photo/2016/03/27/21/52/woman-1284411_960_720.jpg" alt="avatar2" />
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="avatar3" />
             </div>
           </div> }
       </div>

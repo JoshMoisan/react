@@ -76,7 +76,7 @@ const GroupInfo = () => {
 
 
       <div className="red-cover-hidden"></div>
-        <div className="text">
+        <div className="group-info">
           <h1>This week for</h1>
           <h1>{targetGroup.name}...</h1>
         </div>

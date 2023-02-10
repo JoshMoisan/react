@@ -14,7 +14,7 @@ return (
     <input type="range" id="groupe-size" name="groupe-size"
          min="0" max="5" />
     <label for="groupe-size">Group size</label>
-
+    <br />
     <label for="choice1"> Fish      </label>
       <input type="checkbox" className="choice" id="choice1" name="choice1" value="Fish" />
     <label for="choice2"> Nut </label>

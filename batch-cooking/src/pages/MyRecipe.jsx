@@ -33,6 +33,8 @@ const MyRecipe = () => {
         <h1 id="title-myrecipe">My Recipes</h1>
       </div>
 
+      <button id="add-recipe" >Add  +</button>
+
     </div>
   );
 };
