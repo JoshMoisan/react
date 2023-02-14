@@ -1,0 +1,7 @@
+1. My Recipe
+2. My Profile
+3. SideBar
+4. Logo
+5. Push to Heroku
+
+
