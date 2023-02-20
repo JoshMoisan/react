@@ -11,7 +11,7 @@ function Index() {
 
   return (
     <div>
-        <h1>Which group are you joining ?</h1>
+        <h1 id='header'>Which group are you joining ?</h1>
       <div className="index">
           <Sidebar />
         <div className="grid">

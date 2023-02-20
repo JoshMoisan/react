@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './styling/App.scss';
-import './styling/CookingGroup.scss';
 import './styling/Footer.scss';
 import './styling/GroupInfo.scss';
 import './styling/Index.scss';
@@ -15,10 +14,7 @@ import './styling/Oops.scss';
 import './styling/Popup.scss';
 import './styling/RecipeCard.scss';
 import './styling/HistoryCard.scss';
-
-
-
-
+import './styling/Sidebar.scss';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

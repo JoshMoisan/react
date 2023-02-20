@@ -33,7 +33,7 @@ const MyRecipe = () => {
         <h1 id="title-myrecipe">My Recipes</h1>
       </div>
 
-      <button id="add-recipe" >Add  +</button>
+      <a id="add-recipe" href="/newrecipe" className="button-std">Add  +</a>
 
     </div>
   );
