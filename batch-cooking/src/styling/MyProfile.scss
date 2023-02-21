@@ -5,11 +5,10 @@ $white: #F6F4F3;
 
 
 .filler-photo {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/Cooking.jpeg);
-  background-size: 110%;
-  background-repeat: no-repeat;
+  border: 2px solid $white;
   width: 55vw;
   border-radius: 25px;
+  margin: 0 16px;
 }
 
 #my-profile-title {
@@ -57,8 +56,11 @@ $white: #F6F4F3;
   .profile-flex{
     justify-content: center;
   }
-
+  #my-profile-title{
+    text-align: center;
+  }
   .arch-avatar img{
+    margin-bottom: 16px;
     height: 300px;
   }
 }

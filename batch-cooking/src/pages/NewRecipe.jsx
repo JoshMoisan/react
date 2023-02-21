@@ -41,7 +41,6 @@ const newRecipe = () => {
         </div>
 
         <div className="arch-picture">
-
         </div>
       </div>
           <span className="options-recipe">

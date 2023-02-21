@@ -21,8 +21,6 @@ const MyProfile = () => {
         <div className="filler-photo">
         </div>
 
-
-
           <div className="profile-info-flex">
             <div className="arch-avatar">
               <img src="https://cdn.pixabay.com/photo/2016/11/22/22/21/adventure-1850912_960_720.jpg" alt="my avatar" />
