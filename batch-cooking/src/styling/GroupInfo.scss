@@ -108,6 +108,7 @@ $white: #F6F4F3;
 .button-option a:hover, #quit:hover {
   border: 1px solid $white;
   background: $red;
+  color: $white;
 }
 
 .red-cover-hidden {
@@ -158,6 +159,7 @@ $white: #F6F4F3;
   a:hover {
     border: 1px solid $white;
     background: $red;
+
   }
 }
 
